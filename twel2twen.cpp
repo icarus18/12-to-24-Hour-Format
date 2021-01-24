@@ -8,10 +8,10 @@ using namespace std;
 
 int main() {
     
-    printf("Enter a time in 12hr-Format(ex. 02:03:45AM)\n");
+    	printf("Enter a time in 12hr-Format(ex. 02:03:45AM)\n");
 	printf("-->");
-    string s;// = "12:46:05AM";
-    cin >> s;
+    	string s;// = "12:46:05AM";
+    	cin >> s;
     
     do {
         //string s;
@@ -32,8 +32,7 @@ int main() {
 
         for (int i = 0; i < doggy.size(); i += 1) {
             if (doggy[i] < 58 && doggy[i] > 47) {
-
-                kitty.push_back(doggy[i]);
+		kitty.push_back(doggy[i]);
             }
             if (doggy[i] == 'P' || doggy[i] == 'p') {
                 cnt++;
@@ -94,8 +93,7 @@ int main() {
             u = i / 1;
             mike_tyson = '0' + u;
             doggy.push_back(mike_tyson);
-
-        }
+	}
 
         doggy.push_back(58);
         for (int heyhey = 2; heyhey < kitty.size() - 2; heyhey += 1) {
@@ -110,19 +108,20 @@ int main() {
         kitty.erase(kitty.begin(), kitty.end());
         kitty.resize(0);
 		
-		s = "";
+	s = "";
         s = s.append(doggy.begin(), doggy.begin() + doggy.size());
 		
-		doggy.erase(doggy.begin(), doggy.end());
+	doggy.erase(doggy.begin(), doggy.end());
         doggy.resize(0);
         
-		cout << s << endl;
+	cout << s << endl;
         printf("-->");
-		cin >> s;
+	cin >> s;
+    
     } while (s != "exit");
 	
-    printf("\n");
-    system("pause");
-	return 0;
+   printf("\n");
+   system("pause");
+   return 0;
 
 }
