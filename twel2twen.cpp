@@ -79,7 +79,7 @@ int main() {
         }
 
         
-		if (cnt == 1) {
+	if (cnt == 1) {
             u = i / 10;
             mike_tyson = '0' + u;
             doggy.push_back(mike_tyson);
